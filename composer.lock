@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4ebb778750cffab88465a0e72688da7f",
-    "content-hash": "6c563a4e4fedebe97bbfa3e3a108fe18",
+    "hash": "4cde79a6e61a29d945eac876812ae0b4",
+    "content-hash": "4ce49dc5b2bea35caa4ffed480ada3f3",
     "packages": [
         {
             "name": "authorizenet/authorizenet",
@@ -2520,6 +2520,49 @@
                 "stripe"
             ],
             "time": "2016-01-13 04:00:45"
+        },
+        {
+            "name": "paradigm/payum-paytrail",
+            "version": "dev-master",
+            "target-dir": "Paradigm/PayumPaytrail",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Paradigmfi/PayumPaytrail.git",
+                "reference": "b17f8cd6291132c215c25a8a1e79bdd58197b2e2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Paradigmfi/PayumPaytrail/zipball/b17f8cd6291132c215c25a8a1e79bdd58197b2e2",
+                "reference": "b17f8cd6291132c215c25a8a1e79bdd58197b2e2",
+                "shasum": ""
+            },
+            "require": {
+                "payum/core": "^1"
+            },
+            "type": "project",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Paradigm\\PayumPaytrail": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "The Payum extension for Paytrail payment gateway",
+            "keywords": [
+                "payment",
+                "paytrail"
+            ],
+            "support": {
+                "source": "https://github.com/Paradigmfi/PayumPaytrail/tree/master",
+                "issues": "https://github.com/Paradigmfi/PayumPaytrail/issues"
+            },
+            "time": "2016-03-03 17:16:47"
         },
         {
             "name": "paragonie/random_compat",
@@ -5806,7 +5849,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "paradigm/payum-paytrail": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
